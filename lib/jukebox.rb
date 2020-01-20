@@ -53,7 +53,8 @@ def run(songs)
   end
   # now loop until user exits
   # damn this isnt looping
-  while !command == "exit" do
+  while !(command == "exit") do
+    #mother effin pemdas. it was doing the opposite of command
     puts "Please enter a command:"
     command  = gets.strip
     if command == "help"
