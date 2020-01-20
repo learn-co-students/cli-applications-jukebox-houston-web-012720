@@ -37,22 +37,7 @@ def exit_jukebox()
 end
 
 def run(songs) 
-  # initialize command and do the first pass
-  puts "Please enter a command:"
-  command = gets.strip 
-  if command == "help"
-    help()
-  elsif command == "list"
-    list(songs)
-  elsif command == "play"
-    play(songs)
-  elsif command == "exit"
-    exit_jukebox()
-  else
-    puts "Invalid command"
-  end
-  # now loop until user exits
-  # damn this isnt looping
+  command = 0
   while !(command == "exit") do
     #mother effin pemdas. it was doing the opposite of command
     puts "Please enter a command:"
